@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- WebCraft Brand & Favicon -->
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAICUlEQVR4nHWXSYxcVxWGv3PfUFNXz+7BAxYeYpIOyLGtgJFQQCHggBI2LIgQO3YIgVigsISEDRIS7NnAhg2IIZGiLGIlceTEDk6ISdpEFvFEt52229Vd1TW84d7D4g31OhKv9N6re1/VO/8557/n/FcWlg+pMYKIIMZgxCDlmc0bYxAj5ZwRAREEULKLoqhzqGp5OqeoFnMO52x+1/LuI5SHlFcprwWI4mPyMcUztASBGMCVgERAdfx2EQElnxdEFF+qD4XSIJUxVOYpvJccsVR9AASVbFbz/2mGqPwvqiUIf+z52G92jSvxEMlShMlehFZCp5n3ZJ6BIC6LjqiAKKigFRBABmBsd7cvZUSMhzEeRvzdHMkBqIKKQ3E4LIjFqQVRRAUVBZeDIMdChsMvjarstl/kGR/UgDPgeaAeYMBloc4hZL/BZoZUAcWIYsWVgULHQSsOP6fL2LbmniMY8QFDsz7DVGOWhtei4dWpm5CaCQhNAIC1lsQlxDYmSof0kz73R/foxh1MHpf/d/hVoyioaMF3VIWJ+hx16gw7W0R2myEhbX+CmBB1eVRFcVhGdkRERCop7bCFCTw68QYGg8V+0nkUxc9saz4s+CSoCk1vAh0lbI7uUTMNml6TiWCCTn+Ldtji9PTnUZR/di+zGd9DjDAY9YlchPqWVtBmImjT1c6u7GolJT6qkKetXA0iePiEqc9Wsonv1RBj2I66fOfhp/hs/RSXb11h0m/QTTqcaJ3kivmQ68PrPHDgBFYT3rl5nsRtMuXm8Dw/I2WFDJqjMCUi1aKkAAbPeSRJjFWLtZZROmSxuczZyxdxYjgx+zQfbU4QTB2EKcWPZnnyyLf5+bee56uf+R6n5x8nJiJNY3zrZyzTfMVoEQnFFCzW/GkWCYO6rJQ6pzhSFhuHODzzCAtzx3ju3K+5mtwirs8TRS0+3XoCN1dnyX+MN859zB/P/obrOx+AGFKXggNRkwPQT0QgN6qqOM0XaM4BECI7ouVPcuaB79KJlGv9NWYaS/zlw79yq95ho9bm5fX7LB36Oufu3+TszTc5XlthM77LIBlkhSd/J0Wkdey2GTNzTMSMloZUQbH0oxGr17bYStZ5fOU4P/3K8xxuHOdK51UuTHZpHm7RGdYJ56e51rnIRztDLD4qljR/H0UKGDerkoRa/qgITza2ojjnSEPwTkY86B/i6qUW7tBNTp7Zz9LmM1w6GTPd2Ef3pVt8cPUFDk22WJ4/wOp/UlQhhbzj5Wst51oBwlTbp1bTAVgcSTLi6Nd+xmj+Qf724u+5Vtvhpavn+ft7G3Qf2I9swgsvvsLrg3Ns9W7xysafCeYe4okjz5ImEdaARXbZKLiuKDK3cECL7mfEYKRG4LUwUsc6R69/AyYPs+ep72PCO0xeP8D999/HzM4yu/JlosEOHfMBnF9lZeoEm1+4R3tjD1df+x09d4124yC+8XAMiWyfVOOKRlD8ghCVBGRiQRwWhzqLn2yha126vSvUD04wffoMveENugd3cJ4SvhHw0JFnCOqrXPnXh6Smxcjv4SKLFYfB4FR3Lb9PACgaUVXRWJxothxDob6yiFk7xVZnnbAxIFk+hjz9KNId0nh3g7XBW4z6H7OndYzap/Zgb4AOFcXiMFi0dG7clRSZntunpcQSgycBntdAvJBEldHObVQM3sJhGqe+iX/0EZxExOvv03pwH2YnIV5dw5+ZQ4cecnudwepZht2PMKo0m4v4EmB1hLVDrCZ5CjJnTVmE8rtTl6F2FiGrDeIHpPeu03v9DwxWXyY9tYL/gx8S/3ubwdoA/yc/Rh57nJ1bF9h8708M+jcQLyzbj9U0i2jufZXsMjW7VzO5RUZEPDyvgSJ44RQ7/TUwHlJrgPFxVjEHDxM++yMWl5ZwqdK5fZvBr36Lrt9AjEKaoMkI0pTpxj6itIeIw9oRii29d6rI5MyylsJTQPAwXph3xiwVvfg2XthGak1oTQI+VoXZ0ydBlftvXsI3Cpqigx4a9UnjHjPBXjRNSGWEQbEuzgGM1bK0Z5ayoluR4SI+nhcwGvVpBEs05vfSSe+iQYC0ppHJGaQ9hY0tqOLVfLS3jW7fh8E2ksTMBAuMNtbpp3eo19tYG6Oa7sq/quIXIqBoElmDdDhrCcI6O8P/wrahPjNP7AtSayK1AAkgnGojIqSDAVoL0foEYoXQc0SdDbqjNerNFs7GqLMohfGi8SvSnl7SQgMUilbEZHJMPJw6hoMeNknB9xEjWOswxpAmKSQxQbNR9BnsKAK1YAwzcwtZfVGHqs3PohY4FLI6UKjkQqtTqFunBGHI1PIBxDNEcUJ/MGR2bpZut8fCwh4O7N/PxbcvgSpBEHD8cw/jex4icPGtC9g0ASkASL4KKpuXianFSgSqkSBHZDjzjSdZXt7LYDAElLBWp7O1zZe++ChvnL/AsWNHCXyf5eUlUMc7715mfm6a537xSyZaDawrPC8KEeNlODG1oOV2rBRu2XdjDKMoYuWhh2k0WxgjNJstrHOowvT0FO2JNnc+vsP+fXuZnZvl1bOvcffeXRYXF3jnH2/TaDZwLhc7jI0X9UBakwuaGTalEij2BAgYEeIkKdWSMSZvXEKcpAS+j7XZ0kqtJQx8PM/DOUsQhDhXKb3jRpiXfZDW5KKSbySr29NKODKjRb8ouEIGrmhmRdScG+8+MuNU9KaUBCy++8WmIHuRqxjKu6SYihdSISpYdh+628UyzONhVfhmz/8HlvXdsOBJYboAAAAASUVORK5CYII=">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muscle Relaxants — Clinical Reference</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #0d0f14;
+    --surface:   #13161e;
+    --card:      #1a1e2a;
+    --border:    #252a38;
+    --accent1:   #5b8cff;   /* neuromuscular — electric blue  */
+    --accent2:   #ff6b6b;   /* spasmolytics  — warm red       */
+    --accent3:   #4ecdc4;   /* dantrolene    — teal           */
+    --accent4:   #ffd93d;   /* baclofen      — gold           */
+    --accent5:   #a78bfa;   /* benzos        — violet         */
+    --text:      #e8eaf0;
+    --muted:     #8b90a0;
+    --dim:       #555b70;
+    --mono:      'JetBrains Mono', monospace;
+    --sans:      'Inter', sans-serif;
+    --display:   'Syne', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #0d0f14 0%, #111520 50%, #0d1020 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 56px 40px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(91,140,255,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent1);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .hero-title {
+    font-family: var(--display);
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  .hero-title span { color: var(--accent1); }
+  .hero-sub {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 600px;
+    font-weight: 300;
+  }
+  .hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  .htag {
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .htag.nm  { color: var(--accent1); border-color: rgba(91,140,255,0.3); background: rgba(91,140,255,0.06); }
+  .htag.sp  { color: var(--accent2); border-color: rgba(255,107,107,0.3); background: rgba(255,107,107,0.06); }
+  .htag.dn  { color: var(--accent3); border-color: rgba(78,205,196,0.3);  background: rgba(78,205,196,0.06);  }
+  .htag.bz  { color: var(--accent5); border-color: rgba(167,139,250,0.3); background: rgba(167,139,250,0.06); }
+
+  /* ── NAV ── */
+  .toc {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .toc a {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.15s;
+    letter-spacing: 0.06em;
+  }
+  .toc a:hover { background: var(--card); color: var(--text); }
+
+  /* ── LAYOUT ── */
+  main { max-width: 1280px; margin: 0 auto; padding: 40px; }
+
+  section { margin-bottom: 64px; }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--dim);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: var(--display);
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .section-desc {
+    color: var(--muted);
+    font-size: 13.5px;
+    margin-bottom: 28px;
+    max-width: 700px;
+  }
+
+  /* ── DIVIDER ── */
+  hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+
+  /* ── DRUG CARD ── */
+  .drug-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+  }
+  .drug-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .drug-card:hover { border-color: var(--dim); }
+  .drug-header {
+    padding: 18px 20px 14px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .drug-name {
+    font-family: var(--display);
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .drug-generic {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 2px;
+    font-family: var(--mono);
+  }
+  .class-badge {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    white-space: nowrap;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  .badge-nd { background: rgba(91,140,255,0.12);  color: var(--accent1); }
+  .badge-nb { background: rgba(91,140,255,0.08);  color: #82aaff; }
+  .badge-sp { background: rgba(255,107,107,0.12); color: var(--accent2); }
+  .badge-dn { background: rgba(78,205,196,0.12);  color: var(--accent3); }
+  .badge-bz { background: rgba(167,139,250,0.12); color: var(--accent5); }
+  .badge-a2 { background: rgba(255,217,61,0.10);  color: var(--accent4); }
+
+  .drug-body { padding: 16px 20px 20px; }
+
+  .info-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .info-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--dim);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    min-width: 48px;
+    padding-top: 2px;
+    flex-shrink: 0;
+  }
+  .info-val {
+    font-size: 13px;
+    color: var(--text);
+    flex: 1;
+    line-height: 1.5;
+  }
+  .info-val em { color: var(--muted); font-style: normal; font-size: 12px; }
+
+  .pill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 2px;
+  }
+  .pill {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 99px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
+
+  .moa-box {
+    background: rgba(255,255,255,0.02);
+    border-left: 3px solid var(--accent1);
+    border-radius: 0 6px 6px 0;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 13px;
+    color: #c8cadb;
+    line-height: 1.6;
+  }
+  .moa-box.red  { border-color: var(--accent2); }
+  .moa-box.teal { border-color: var(--accent3); }
+  .moa-box.vio  { border-color: var(--accent5); }
+  .moa-box.gold { border-color: var(--accent4); }
+
+  .warn-box {
+    background: rgba(255,107,107,0.06);
+    border: 1px solid rgba(255,107,107,0.2);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 12px;
+    font-size: 12px;
+    color: #ffaaaa;
+  }
+  .warn-box::before { content: '⚠ '; }
+
+  /* ── COMPARISON TABLE ── */
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead th {
+    background: var(--surface);
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  tbody tr { border-bottom: 1px solid rgba(255,255,255,0.04); }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: rgba(255,255,255,0.02); }
+  tbody td {
+    padding: 11px 16px;
+    vertical-align: top;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .td-drug { font-weight: 600; color: #fff; white-space: nowrap; }
+  .td-mono { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+
+  /* ── SITUATION CARDS ── */
+  .sitcards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .sitcard {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .sit-icon { font-size: 22px; margin-bottom: 10px; }
+  .sit-title {
+    font-family: var(--display);
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .sit-drugs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .sit-drug {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 4px;
+    background: rgba(91,140,255,0.1);
+    color: var(--accent1);
+    border: 1px solid rgba(91,140,255,0.2);
+  }
+  .sit-drug.alt {
+    background: rgba(255,107,107,0.1);
+    color: var(--accent2);
+    border-color: rgba(255,107,107,0.2);
+  }
+  .sit-note { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+
+  /* ── ADVERSE EFFECTS ── */
+  .ae-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+  }
+  .ae-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .ae-drug {
+    font-family: var(--display);
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .ae-list { list-style: none; }
+  .ae-list li {
+    font-size: 12.5px;
+    color: var(--muted);
+    padding: 3px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.04);
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .ae-list li::before { content: '·'; color: var(--dim); flex-shrink: 0; }
+  .ae-serious { color: #ff9090 !important; }
+
+  /* ── REVERSAL BOX ── */
+  .rev-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .rev-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .rev-title {
+    font-family: var(--display);
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .rev-sub { font-size: 12px; color: var(--muted); margin-bottom: 12px; font-family: var(--mono); }
+  .rev-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.05);
+    font-size: 13px;
+    gap: 12px;
+  }
+  .rev-item:last-child { border-bottom: none; }
+  .rev-label { color: var(--muted); }
+  .rev-val { color: var(--text); font-family: var(--mono); font-size: 12px; text-align: right; }
+
+  /* ── DEPTH CALLOUT ── */
+  .callout {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 24px 0;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .callout-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+  .callout-body { font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+  .callout-body strong { color: var(--text); }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 32px;
+    color: var(--dim);
+    font-family: var(--mono);
+    font-size: 11px;
+    border-top: 1px solid var(--border);
+    letter-spacing: 0.08em;
+  }
+
+  @media (max-width: 600px) {
+    .hero { padding: 36px 20px 28px; }
+    .toc  { padding: 10px 20px; }
+    main  { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ──────────────── HERO ──────────────── -->
+<div class="hero">
+  <div class="hero-eyebrow">Clinical Pharmacology Reference</div>
+  <h1 class="hero-title">Muscle <span>Relaxants</span></h1>
+  <p class="hero-sub">Complete reference — MOA, dosing, indications, adverse effects, reversal, and clinical decision framework</p>
+  <div class="hero-tags">
+    <span class="htag nm">Neuromuscular Blockers</span>
+    <span class="htag sp">Spasmolytics</span>
+    <span class="htag dn">Peripherally Acting</span>
+    <span class="htag bz">Adjuncts</span>
+  </div>
+</div>
+
+<!-- ──────────────── TOC ──────────────── -->
+<nav class="toc">
+  <a href="#overview">Overview</a>
+  <a href="#nmb-depolarising">Depolarising NMBs</a>
+  <a href="#nmb-nondepol">Non-Depolarising NMBs</a>
+  <a href="#central">Central Spasmolytics</a>
+  <a href="#peripheral">Peripheral — Dantrolene</a>
+  <a href="#adjuncts">Adjuncts</a>
+  <a href="#comparison">Comparison Table</a>
+  <a href="#situation">Which Drug When</a>
+  <a href="#ae">Adverse Effects</a>
+  <a href="#reversal">Reversal Agents</a>
+</nav>
+
+<main>
+
+<!-- ──────────────── OVERVIEW ──────────────── -->
+<section id="overview">
+  <div class="section-label">Classification</div>
+  <h2 class="section-title">Two Completely Different Drug Families</h2>
+  <p class="section-desc">
+    "Muscle relaxant" is an umbrella covering two mechanistically unrelated groups. Confusing them is a dangerous clinical error.
+  </p>
+
+  <div class="callout">
+    <div class="callout-icon">⚡</div>
+    <div class="callout-body">
+      <strong>Neuromuscular Blocking Agents (NMBAs)</strong> — block the NMJ. Cause complete flaccid paralysis. Patient cannot breathe. Exclusively used in anaesthesia/ICU with mandatory airway control. <br><br>
+      <strong>Spasmolytics</strong> — act centrally or peripherally to reduce muscle spasm/spasticity. Patient stays conscious and breathes independently. Used in neurology, orthopaedics, pain medicine.
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- ──────────────── DEPOLARISING ──────────────── -->
+<section id="nmb-depolarising">
+  <div class="section-label">Neuromuscular Blockers — Type I</div>
+  <h2 class="section-title">Depolarising NMBs</h2>
+  <p class="section-desc">Mimic ACh at the NMJ but resist hydrolysis → sustained depolarisation → muscle inexcitable (Phase I block). Only one clinical agent remains.</p>
+
+  <div class="drug-grid">
+
+    <!-- SUXAMETHONIUM -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Suxamethonium</div>
+          <div class="drug-generic">Succinylcholine · SCh</div>
+        </div>
+        <span class="class-badge badge-nd">Depolarising</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>IV:</strong> 1–1.5 mg/kg (RSI) <em>/ max 150 mg</em><br>
+            <strong>Paediatric:</strong> 2 mg/kg IV (infant) · 1–1.5 mg/kg child<br>
+            <strong>IM:</strong> 3–4 mg/kg (if no IV access) <em>/ delayed onset</em>
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Onset</span>
+          <span class="info-val">30–60 sec IV</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Duration</span>
+          <span class="info-val">8–12 min <em>(hydrolysed by plasma cholinesterase)</em></span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">RSI</span>
+              <span class="pill">Laryngospasm</span>
+              <span class="pill">Emergency intubation</span>
+              <span class="pill">Electroconvulsive therapy</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box">
+          <strong>MOA:</strong> Binds nicotinic ACh receptors (α-subunits) at NMJ → sustained depolarisation (fasciculations) → receptor desensitisation → muscle inexcitable (Phase I block). Structurally two ACh molecules joined: resistant to acetylcholinesterase but hydrolysed by <em>plasma cholinesterase (pseudocholinesterase)</em>.
+        </div>
+        <div class="warn-box">
+          CI: Burns >24h, denervation injury, crush injury, prolonged immobility, hyperkalaemia, malignant hyperthermia susceptibility, pseudocholinesterase deficiency, penetrating eye injury, myopathies, personal/family Hx of MH
+        </div>
+        <div class="info-row" style="margin-top:12px;">
+          <span class="info-label">Special</span>
+          <span class="info-val">Phase II block (dual block) occurs at high/repeated doses — mimics non-depolarising block. No antidote; neostigmine worsens Phase I block.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DECAMETHONIUM note -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Decamethonium</div>
+          <div class="drug-generic">Obsolete depolarising agent</div>
+        </div>
+        <span class="class-badge badge-nd">Depolarising</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Status</span>
+          <span class="info-val">No longer in clinical use. Not hydrolysed by plasma cholinesterase — prolonged action made it impractical.</span>
+        </div>
+        <div class="moa-box">
+          <strong>MOA:</strong> Same as suxamethonium — NMJ depolarisation. Mentioned only for completeness in pharmacology exams.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+<!-- ──────────────── NON-DEPOLARISING ──────────────── -->
+<section id="nmb-nondepol">
+  <div class="section-label">Neuromuscular Blockers — Type II</div>
+  <h2 class="section-title">Non-Depolarising NMBs</h2>
+  <p class="section-desc">Competitive antagonists at nicotinic ACh receptors. No fasciculations. Reversible with anticholinesterases (or sugammadex for amino-steroids).</p>
+
+  <div class="drug-grid">
+
+    <!-- ROCURONIUM -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Rocuronium</div>
+          <div class="drug-generic">Aminosteroidal</div>
+        </div>
+        <span class="class-badge badge-nb">Non-Depol</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Intubation:</strong> 0.6 mg/kg IV <em>(onset ~90s)</em><br>
+            <strong>RSI (high dose):</strong> 1.2 mg/kg IV <em>(onset 60s, duration ~70 min)</em><br>
+            <strong>Maintenance:</strong> 0.1–0.2 mg/kg IV bolus<br>
+            <strong>Infusion:</strong> 0.3–0.6 mg/kg/hr
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Onset</span>
+          <span class="info-val">60–90 sec (dose-dependent)</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Duration</span>
+          <span class="info-val">30–60 min (intermediate)</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">RSI (alt to SCh)</span>
+              <span class="pill">Elective intubation</span>
+              <span class="pill">ICU paralysis</span>
+              <span class="pill">Surgical relaxation</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box">
+          <strong>MOA:</strong> Competitive antagonism at α-subunit of nicotinic ACh receptor at NMJ. No channel activation → no depolarisation → flaccid paralysis. Reversed by sugammadex (encapsulates rocuronium) or neostigmine (inhibits AChE → more ACh competes).
+        </div>
+        <div class="info-row" style="margin-top:12px;">
+          <span class="info-label">Excretion</span>
+          <span class="info-val">Primarily hepatic/biliary. Use with caution in liver disease.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- VECURONIUM -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Vecuronium</div>
+          <div class="drug-generic">Aminosteroidal</div>
+        </div>
+        <span class="class-badge badge-nb">Non-Depol</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Intubation:</strong> 0.1 mg/kg IV<br>
+            <strong>Maintenance:</strong> 0.01–0.02 mg/kg IV bolus<br>
+            <strong>Infusion:</strong> 1–2 mcg/kg/min
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Onset</span>
+          <span class="info-val">2–3 min</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Duration</span>
+          <span class="info-val">25–40 min (intermediate)</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Surgical relaxation</span>
+              <span class="pill">ICU ventilation</span>
+              <span class="pill">Cardiac surgery</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box">
+          <strong>MOA:</strong> Same class as rocuronium — competitive NMJ blockade. Minimal cardiovascular effects — no histamine release, no vagolytic/ganglion-blocking activity. Advantage in cardiac patients.
+        </div>
+        <div class="info-row" style="margin-top:12px;">
+          <span class="info-label">Special</span>
+          <span class="info-val">Liver failure prolongs action (hepatic metabolism). 3-desacetyl metabolite (active) accumulates in renal failure.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ATRACURIUM -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Atracurium</div>
+          <div class="drug-generic">Benzylisoquinolinium</div>
+        </div>
+        <span class="class-badge badge-nb">Non-Depol</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Intubation:</strong> 0.4–0.5 mg/kg IV<br>
+            <strong>Maintenance:</strong> 0.08–0.1 mg/kg IV q15–25 min<br>
+            <strong>Infusion:</strong> 5–10 mcg/kg/min
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Onset</span>
+          <span class="info-val">2–3 min</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Duration</span>
+          <span class="info-val">20–35 min (intermediate)</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Renal failure</span>
+              <span class="pill">Hepatic failure</span>
+              <span class="pill">ICU (organ-independent)</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box">
+          <strong>MOA:</strong> Competitive NMJ blockade. Undergoes <em>Hofmann elimination</em> (spontaneous pH/temperature-dependent degradation) + ester hydrolysis → eliminated independently of liver/kidney. Ideal in multi-organ failure.
+        </div>
+        <div class="warn-box">
+          Releases histamine at higher doses → flushing, hypotension, bronchospasm. Laudanosine metabolite (CNS stimulant) accumulates in prolonged ICU use → seizure risk.
+        </div>
+      </div>
+    </div>
+
+    <!-- CIS-ATRACURIUM -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Cisatracurium</div>
+          <div class="drug-generic">Benzylisoquinolinium — 1R,cis-1'R isomer</div>
+        </div>
+        <span class="class-badge badge-nb">Non-Depol</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Intubation:</strong> 0.15–0.2 mg/kg IV<br>
+            <strong>Maintenance:</strong> 0.03 mg/kg IV bolus<br>
+            <strong>Infusion:</strong> 1–3 mcg/kg/min
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Onset</span>
+          <span class="info-val">2–3 min</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Duration</span>
+          <span class="info-val">40–75 min</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">ARDS (prone positioning)</span>
+              <span class="pill">Renal/hepatic failure</span>
+              <span class="pill">Prolonged ICU paralysis</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box">
+          <strong>MOA:</strong> Same as atracurium (Hofmann + ester hydrolysis) but 3–4× more potent. Minimal histamine release. Lower laudanosine production → safer for prolonged use. Preferred over atracurium in ICU.
+        </div>
+      </div>
+    </div>
+
+    <!-- PANCURONIUM -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Pancuronium</div>
+          <div class="drug-generic">Aminosteroidal — Long-acting</div>
+        </div>
+        <span class="class-badge badge-nb">Non-Depol</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Intubation:</strong> 0.06–0.1 mg/kg IV<br>
+            <strong>Maintenance:</strong> 0.01–0.015 mg/kg IV
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Onset</span>
+          <span class="info-val">3–5 min</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Duration</span>
+          <span class="info-val">60–100 min (long-acting)</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Long surgeries</span>
+              <span class="pill">ICU ventilation</span>
+              <span class="pill">Low-cost settings</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box">
+          <strong>MOA:</strong> Competitive NMJ blockade + vagolytic effect (muscarinic M2 blockade at SA node → <strong>tachycardia</strong>). Also mild sympathomimetic effect. Renal excretion (~80%) → prolonged in renal failure.
+        </div>
+        <div class="warn-box">
+          Tachycardia and hypertension — avoid in ischaemic heart disease and controlled AF. Long duration makes reversal timing difficult.
+        </div>
+      </div>
+    </div>
+
+    <!-- MIVACURIUM -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Mivacurium</div>
+          <div class="drug-generic">Benzylisoquinolinium — Short-acting</div>
+        </div>
+        <span class="class-badge badge-nb">Non-Depol</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Intubation:</strong> 0.15–0.25 mg/kg IV<br>
+            <strong>Infusion:</strong> 8–10 mcg/kg/min
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Onset</span>
+          <span class="info-val">2–3 min</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Duration</span>
+          <span class="info-val">12–20 min (short)</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Short procedures</span>
+              <span class="pill">Day surgery</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box">
+          <strong>MOA:</strong> Competitive NMJ blockade. Hydrolysed by plasma cholinesterase (like suxamethonium) → short duration without renal/hepatic involvement. Histamine release at high doses.
+        </div>
+        <div class="warn-box">
+          Pseudocholinesterase deficiency → profoundly prolonged block (same as SCh). Limited availability in many countries.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+<!-- ──────────────── CENTRAL SPASMOLYTICS ──────────────── -->
+<section id="central">
+  <div class="section-label">Spasmolytics — CNS-Acting</div>
+  <h2 class="section-title">Central Muscle Relaxants</h2>
+  <p class="section-desc">Reduce muscle tone via CNS pathways — spinal cord interneurons, α2-receptors, or GABA-B receptors. No NMJ action. Patient remains conscious.</p>
+
+  <div class="drug-grid">
+
+    <!-- BACLOFEN -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Baclofen</div>
+          <div class="drug-generic">GABA-B agonist</div>
+        </div>
+        <span class="class-badge badge-sp">Spasmolytic</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Oral:</strong> Start 5 mg TDS → titrate to 20–80 mg/day in divided doses<br>
+            <strong>Intrathecal:</strong> 25–1200 mcg/day via pump (severe spasticity)
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">MS spasticity</span>
+              <span class="pill">SCI</span>
+              <span class="pill">Cerebral palsy</span>
+              <span class="pill">Trigeminal neuralgia</span>
+              <span class="pill">Hiccups (off-label)</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box gold">
+          <strong>MOA:</strong> GABA-B receptor agonist (Gi-coupled) at presynaptic terminals in spinal cord dorsal horn → ↓ Ca²⁺ influx → ↓ glutamate/aspartate release from afferent fibres + postsynaptic hyperpolarisation → reduced polysynaptic reflex arc → ↓ muscle tone.
+        </div>
+        <div class="warn-box">
+          Abrupt withdrawal → severe rebound: hyperthermia, seizures, rhabdomyolysis (life-threatening). Taper slowly. Intrathecal pump failure = medical emergency.
+        </div>
+        <div class="info-row" style="margin-top:12px;">
+          <span class="info-label">Kinetics</span>
+          <span class="info-val">Absorbed orally. Renal excretion 70–80% unchanged. Dose reduce in renal failure. Does not cross BBB well — explains high intrathecal doses.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIZANIDINE -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Tizanidine</div>
+          <div class="drug-generic">α2-adrenergic agonist</div>
+        </div>
+        <span class="class-badge badge-sp">Spasmolytic</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Oral:</strong> 2–4 mg TDS <em>(max 36 mg/day)</em><br>
+            Start 2 mg nocte, titrate over weeks
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Spasticity (MS, SCI)</span>
+              <span class="pill">Muscle spasm — back pain</span>
+              <span class="pill">Neck pain</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box red">
+          <strong>MOA:</strong> Presynaptic α2-adrenergic agonist in spinal cord → inhibits excitatory interneurons → ↓ release of excitatory amino acids (glutamate, aspartate) from Ia afferents → reduces polysynaptic motor neuron facilitation. Similar mechanism to clonidine.
+        </div>
+        <div class="info-row" style="margin-top:12px;">
+          <span class="info-label">Kinetics</span>
+          <span class="info-val">Short half-life ~2.5 h. Hepatic metabolism via CYP1A2. <strong>Significant food-dose interaction</strong> — fed state alters peak and AUC.</span>
+        </div>
+        <div class="warn-box">
+          Hepatotoxicity (monitor LFTs). Sedation, hypotension. Avoid with ciprofloxacin/fluvoxamine (CYP1A2 inhibitors → toxic plasma levels). Avoid in hepatic impairment.
+        </div>
+      </div>
+    </div>
+
+    <!-- CYCLOBENZAPRINE -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Cyclobenzaprine</div>
+          <div class="drug-generic">TCA-related centrally-acting</div>
+        </div>
+        <span class="class-badge badge-sp">Spasmolytic</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Standard:</strong> 5–10 mg TDS <em>(max 30 mg/day, max 3 weeks)</em><br>
+            <strong>Elderly:</strong> 5 mg TDS (avoid 10 mg)
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Acute musculoskeletal spasm</span>
+              <span class="pill">Low back pain (short-term)</span>
+              <span class="pill">Neck pain</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box red">
+          <strong>MOA:</strong> Structurally similar to TCAs (dibenzazepine nucleus). Acts on brainstem → reduces tonic somatic motor activity by inhibiting descending serotonergic and noradrenergic pathways. Anticholinergic + antihistaminic effects contribute to sedation.
+        </div>
+        <div class="warn-box">
+          CI in acute recovery phase post-MI, arrhythmias, heart block, hyperthyroidism. MAOi interaction (serotonin syndrome risk). Glaucoma, urinary retention (anticholinergic). Not for spasticity (MS/SCI) — only musculoskeletal spasm.
+        </div>
+      </div>
+    </div>
+
+    <!-- METHOCARBAMOL -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Methocarbamol</div>
+          <div class="drug-generic">Guaifenesin carbamate</div>
+        </div>
+        <span class="class-badge badge-sp">Spasmolytic</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Oral:</strong> 1500 mg QDS (1st 48–72h) → 750 mg QDS maintenance<br>
+            <strong>IV/IM (routine spasm):</strong> 1–3 g; max 3 g/day IV<br>
+            <strong>IV (tetanus, ICU):</strong> Up to 3 g q8h IV under monitoring
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Acute muscle spasm</span>
+              <span class="pill">Tetanus adjunct</span>
+              <span class="pill">Musculoskeletal pain</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box red">
+          <strong>MOA:</strong> Not fully elucidated. CNS depression at subcortical levels (brainstem reticular formation). May interfere with polysynaptic reflex arcs. No direct skeletal muscle relaxant effect.
+        </div>
+        <div class="info-row" style="margin-top:12px;">
+          <span class="info-label">Special</span>
+          <span class="info-val">Urine may turn brown/green/black (harmless metabolite). IV solution is hypertonic — avoid extravasation. Renal impairment: avoid IV formulation (PEG vehicle accumulates).</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARISOPRODOL -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Carisoprodol</div>
+          <div class="drug-generic">Meprobamate prodrug</div>
+        </div>
+        <span class="class-badge badge-sp">Spasmolytic</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Oral:</strong> 250–350 mg TDS + nocte <em>(max 2–3 weeks)</em>
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Acute musculoskeletal spasm</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box red">
+          <strong>MOA:</strong> Metabolised to <em>meprobamate</em> (active), which is a GABA-A positive modulator (barbiturate-like). Sedation + spinal interneuron depression.
+        </div>
+        <div class="warn-box">
+          High abuse potential (meprobamate is a controlled substance). Schedule IV in USA. Withdrawal seizures. Not first-line — use only if others have failed. Avoid in those with substance use history.
+        </div>
+      </div>
+    </div>
+
+    <!-- CHLORZOXAZONE -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Chlorzoxazone</div>
+          <div class="drug-generic">Benzoxazolone</div>
+        </div>
+        <span class="class-badge badge-sp">Spasmolytic</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Oral:</strong> 250–750 mg TDS/QDS
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Musculoskeletal spasm</span>
+              <span class="pill">Back pain</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box red">
+          <strong>MOA:</strong> Acts at spinal cord and subcortical levels — depresses polysynaptic reflexes. Weak GABA-A enhancement.
+        </div>
+        <div class="warn-box">
+          Hepatotoxicity (rare but fatal cases reported). Monitor LFTs. Urine may turn orange or purple-red (harmless).
+        </div>
+      </div>
+    </div>
+
+    <!-- ORPHENADRINE -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Orphenadrine</div>
+          <div class="drug-generic">Diphenhydramine analogue</div>
+        </div>
+        <span class="class-badge badge-sp">Spasmolytic</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Oral:</strong> 100 mg BD (ER tablet)<br>
+            <strong>IV/IM:</strong> 60 mg q12h
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Acute musculoskeletal pain</span>
+              <span class="pill">Parkinson's (historical)</span>
+              <span class="pill">Drug-induced EPS</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box red">
+          <strong>MOA:</strong> Anticholinergic (muscarinic antagonist) + mild NMDA receptor antagonist. Indirect muscle relaxation via CNS sedation and anticholinergic effects. Not a direct spinal cord spasmolytic.
+        </div>
+        <div class="warn-box">
+          Strong anticholinergic: dry mouth, urinary retention, constipation, confusion (Beers list in elderly). CI in glaucoma, myasthenia, GI obstruction.
+        </div>
+      </div>
+    </div>
+
+    <!-- MEPROBAMATE (standalone) -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Meprobamate</div>
+          <div class="drug-generic">Propanediol carbamate</div>
+        </div>
+        <span class="class-badge badge-bz">Anxiolytic/Muscle</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">400 mg TDS/QDS (largely historical)</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <span class="info-val">Largely replaced. Anxiety + muscle spasm historically. Active metabolite of carisoprodol.</span>
+        </div>
+        <div class="moa-box vio">
+          <strong>MOA:</strong> GABA-A positive modulator (barbiturate-site) → generalised CNS depression → muscle relaxation. High dependence potential.
+        </div>
+        <div class="warn-box">
+          High overdose lethality. Controlled substance. Largely not recommended in modern practice.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+<!-- ──────────────── DANTROLENE ──────────────── -->
+<section id="peripheral">
+  <div class="section-label">Peripherally Acting</div>
+  <h2 class="section-title">Dantrolene Sodium</h2>
+  <p class="section-desc">The only clinically used peripherally acting skeletal muscle relaxant. Unique and irreplaceable mechanism.</p>
+
+  <div class="drug-grid">
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Dantrolene</div>
+          <div class="drug-generic">Hydantoin-class nitrophenyl-furanyl derivative</div>
+        </div>
+        <span class="class-badge badge-dn">Peripheral</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Malignant Hyperthermia (emergency):</strong><br>
+            2.5 mg/kg IV bolus → repeat q5–10 min PRN → total up to 10 mg/kg<br><br>
+            <strong>MH Prophylaxis (oral, pre-op):</strong><br>
+            4–8 mg/kg/day in 4 divided doses × 1–2 days pre-op (rarely used now)<br><br>
+            <strong>Spasticity (oral):</strong><br>
+            Start 25 mg/day → titrate to 100 mg QDS <em>(max 400 mg/day)</em><br><br>
+            <strong>NMS treatment:</strong><br>
+            1–2.5 mg/kg IV q6h
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Malignant hyperthermia — treatment</span>
+              <span class="pill">Neuroleptic malignant syndrome</span>
+              <span class="pill">Serotonin syndrome (adjunct)</span>
+              <span class="pill">Spasticity (MS, CP, SCI)</span>
+              <span class="pill">Exertional heat stroke</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box teal">
+          <strong>MOA:</strong> Directly inhibits ryanodine receptor 1 (RyR1) on the sarcoplasmic reticulum of skeletal muscle → ↓ Ca²⁺ release from SR → ↓ actin-myosin cross-bridge formation → muscle relaxation. Acts WITHIN the muscle cell — not at NMJ, not at CNS. Only agent targeting the E-C coupling step directly.
+          <br><br>
+          In <strong>MH</strong>: volatile anaesthetics/SCh trigger uncontrolled RyR1 opening → massive Ca²⁺ release → hyperthermia, rigidity, acidosis. Dantrolene blocks this by stabilising RyR1.
+        </div>
+        <div class="warn-box">
+          Hepatotoxicity (fatal cases with oral long-term use — monitor LFTs every 3 months). Severe muscle weakness. Respiratory muscle involvement possible. Do not use in chronic obstructive pulmonary or cardiac conditions at spastic doses. IV formulation: older preparation (Dantrium) requires mannitol as vehicle.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- ──────────────── ADJUNCTS ──────────────── -->
+<section id="adjuncts">
+  <div class="section-label">Adjuncts with Muscle Relaxant Properties</div>
+  <h2 class="section-title">Benzodiazepines + Clonidine + Botulinum</h2>
+  <p class="section-desc">Not primary muscle relaxants, but widely used for muscle spasm, spasticity, or procedural muscle relaxation.</p>
+
+  <div class="drug-grid">
+
+    <!-- DIAZEPAM -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Diazepam</div>
+          <div class="drug-generic">Benzodiazepine</div>
+        </div>
+        <span class="class-badge badge-bz">BZD</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Muscle spasm:</strong> 2–10 mg TDS/QDS oral<br>
+            <strong>Spasticity:</strong> 2–10 mg TDS<br>
+            <strong>Tetanus adjunct:</strong> 5–10 mg IV q4–6h; ICU: 100–300 mg/day infusion<br>
+            <strong>Acute back spasm:</strong> 5–10 mg TDS × 5–7 days
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Tetanus</span>
+              <span class="pill">Acute muscle spasm</span>
+              <span class="pill">Alcohol withdrawal spasm</span>
+              <span class="pill">Cerebral palsy spasticity</span>
+              <span class="pill">Procedural muscle relaxation</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box vio">
+          <strong>MOA:</strong> Positive allosteric modulator at GABA-A receptor (benzodiazepine site) → ↑ frequency of Cl⁻ channel opening → neuronal hyperpolarisation → CNS depression + ↓ spinal cord interneuron excitability → muscle relaxation. Also ↓ anxiety component of muscle guarding.
+        </div>
+        <div class="warn-box">
+          Dependence/tolerance. Respiratory depression especially with opioids (FDA black box). Not for long-term spasticity if CNS depression would worsen patient function. Long half-life (20–100h) + active metabolites (desmethyldiazepam) — accumulates in elderly/hepatic impairment.
+        </div>
+      </div>
+    </div>
+
+    <!-- CLONAZEPAM -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Clonazepam</div>
+          <div class="drug-generic">Benzodiazepine</div>
+        </div>
+        <span class="class-badge badge-bz">BZD</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Spasticity:</strong> 0.5–2 mg TDS oral<br>
+            <strong>Restless legs:</strong> 0.5–2 mg nocte
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Spasticity</span>
+              <span class="pill">Restless legs syndrome</span>
+              <span class="pill">Periodic limb movements</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box vio">
+          <strong>MOA:</strong> Same as diazepam — GABA-A positive allosteric modulator. Elimination T½ 20–50h. Metabolised primarily via nitroreduction (CYP3A4) → 7-aminoclonazepam and 7-acetamidoclonazepam (largely inactive metabolites — unlike diazepam, no pharmacologically active metabolites). Also a potent anticonvulsant.
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTULINUM TOXIN -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Botulinum Toxin A/B</div>
+          <div class="drug-generic">Clostridium botulinum neurotoxin</div>
+        </div>
+        <span class="class-badge badge-dn">Focal / NMJ</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Highly variable</strong> — muscle-specific, weight-based, per-injection-site dosing. Measured in units (not mg). E.g., spasticity: 50–200 units/site; administered by specialist only.
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">Focal spasticity (stroke, CP)</span>
+              <span class="pill">Cervical dystonia</span>
+              <span class="pill">Blepharospasm</span>
+              <span class="pill">Hyperhidrosis</span>
+              <span class="pill">Migraine prophylaxis</span>
+              <span class="pill">Overactive bladder</span>
+              <span class="pill">Strabismus</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box teal">
+          <strong>MOA:</strong> Zinc-endopeptidase cleaves SNARE proteins (specifically SNAP-25 for BoNT-A, VAMP for BoNT-B) at presynaptic cholinergic NMJ → prevents vesicle fusion → blocks ACh exocytosis → chemodenervation of targeted muscle. Effect onset 3–7 days; duration 3–6 months (reinnervation via axonal sprouting).
+        </div>
+        <div class="warn-box">
+          Spread to adjacent muscles. Risk of dysphagia/aspiration if near swallowing muscles. Systemic botulism (extremely rare — dose-dependent). Contraindicated in NMJ disorders (MG, Eaton-Lambert). Antibody formation reduces efficacy over time (especially Type B).
+        </div>
+      </div>
+    </div>
+
+    <!-- CLONIDINE -->
+    <div class="drug-card">
+      <div class="drug-header">
+        <div>
+          <div class="drug-name">Clonidine</div>
+          <div class="drug-generic">α2-adrenergic agonist (central)</div>
+        </div>
+        <span class="class-badge badge-a2">α2-Agonist</span>
+      </div>
+      <div class="drug-body">
+        <div class="info-row">
+          <span class="info-label">Dose</span>
+          <span class="info-val">
+            <strong>Spasticity adjunct:</strong> 0.05–0.4 mg/day oral in divided doses<br>
+            <strong>Intrathecal:</strong> 30–150 mcg bolus (spasticity/pain)
+          </span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Use</span>
+          <div>
+            <div class="pill-list">
+              <span class="pill">SCI spasticity</span>
+              <span class="pill">Adjunct to intrathecal baclofen</span>
+              <span class="pill">Sedation/pain in ICU</span>
+            </div>
+          </div>
+        </div>
+        <div class="moa-box gold">
+          <strong>MOA:</strong> Presynaptic α2-adrenergic agonist in spinal cord (same locus as tizanidine) → ↓ excitatory neurotransmitter release. Also postsynaptic effect → hyperpolarisation. Central analgesic + sympatholytic.
+        </div>
+        <div class="warn-box">
+          Hypotension, bradycardia, sedation. Rebound hypertension on abrupt withdrawal.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+<!-- ──────────────── COMPARISON TABLE ──────────────── -->
+<section id="comparison">
+  <div class="section-label">At-a-Glance</div>
+  <h2 class="section-title">Comparison Table — All Agents</h2>
+  <p class="section-desc">Quick-scan reference across all clinically relevant muscle relaxants.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Drug</th>
+          <th>Class</th>
+          <th>MOA (core)</th>
+          <th>Onset</th>
+          <th>Duration</th>
+          <th>Key Use</th>
+          <th>Key CI / Warning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-drug">Suxamethonium</td>
+          <td class="td-mono">Depol NMB</td>
+          <td>nAChR agonist → persistent depol</td>
+          <td>30–60 s</td>
+          <td>8–12 min</td>
+          <td>RSI, laryngospasm</td>
+          <td>Hyperkalaemia, burns, MH susceptibility</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Rocuronium</td>
+          <td class="td-mono">Non-depol NMB</td>
+          <td>Competitive nAChR antagonist</td>
+          <td>60–90 s</td>
+          <td>30–60 min</td>
+          <td>RSI alt, surgical relaxation</td>
+          <td>Prolonged in hepatic failure</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Vecuronium</td>
+          <td class="td-mono">Non-depol NMB</td>
+          <td>Competitive nAChR antagonist</td>
+          <td>2–3 min</td>
+          <td>25–40 min</td>
+          <td>Cardiac surgery, ICU</td>
+          <td>Metabolite accumulates in renal failure</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Atracurium</td>
+          <td class="td-mono">Non-depol NMB</td>
+          <td>nAChR antagonist + Hofmann elim.</td>
+          <td>2–3 min</td>
+          <td>20–35 min</td>
+          <td>Organ failure</td>
+          <td>Histamine release; laudanosine accumulation</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Cisatracurium</td>
+          <td class="td-mono">Non-depol NMB</td>
+          <td>nAChR antagonist + Hofmann elim.</td>
+          <td>2–3 min</td>
+          <td>40–75 min</td>
+          <td>ICU / ARDS paralysis</td>
+          <td>No major — preferred in organ failure</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Pancuronium</td>
+          <td class="td-mono">Non-depol NMB</td>
+          <td>nAChR antagonist + vagolytic</td>
+          <td>3–5 min</td>
+          <td>60–100 min</td>
+          <td>Long surgeries</td>
+          <td>Tachycardia, renal failure prolongs</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Mivacurium</td>
+          <td class="td-mono">Non-depol NMB</td>
+          <td>nAChR antagonist; plasma ChE metabolised</td>
+          <td>2–3 min</td>
+          <td>12–20 min</td>
+          <td>Short procedures</td>
+          <td>Pseudocholinesterase deficiency risk</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Baclofen</td>
+          <td class="td-mono">Central spasmolytic</td>
+          <td>GABA-B agonist (spinal cord)</td>
+          <td>Hours (oral)</td>
+          <td>4–8 h per dose</td>
+          <td>Spasticity (MS, SCI)</td>
+          <td>Withdrawal → seizures; renal dose adjust</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Tizanidine</td>
+          <td class="td-mono">Central spasmolytic</td>
+          <td>α2-agonist (spinal cord)</td>
+          <td>1–2 h</td>
+          <td>3–6 h</td>
+          <td>Spasticity, back pain</td>
+          <td>Hepatotoxicity, CYP1A2 interactions</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Cyclobenzaprine</td>
+          <td class="td-mono">Central spasmolytic</td>
+          <td>Brainstem NE/5-HT modulation</td>
+          <td>1 h</td>
+          <td>12–24 h</td>
+          <td>Acute musculoskeletal spasm</td>
+          <td>Not for spasticity; MAOi interaction</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Methocarbamol</td>
+          <td class="td-mono">Central spasmolytic</td>
+          <td>CNS depression (brainstem)</td>
+          <td>30 min</td>
+          <td>4–6 h</td>
+          <td>Acute spasm, tetanus adjunct</td>
+          <td>Renal failure (IV form)</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Diazepam</td>
+          <td class="td-mono">BZD</td>
+          <td>GABA-A potentiation</td>
+          <td>15–60 min</td>
+          <td>Long (T½ 20–100h)</td>
+          <td>Tetanus, acute spasm, alcohol WD</td>
+          <td>Dependence; respiratory depression</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Dantrolene</td>
+          <td class="td-mono">Peripheral</td>
+          <td>RyR1 blocker → ↓ SR Ca²⁺ release</td>
+          <td>Rapid (IV)</td>
+          <td>Hours</td>
+          <td>MH treatment, NMS, spasticity</td>
+          <td>Hepatotoxicity (oral); respiratory muscle weakness</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Botulinum Toxin</td>
+          <td class="td-mono">Focal NMJ block</td>
+          <td>SNARE cleavage → ↓ ACh release</td>
+          <td>3–7 days</td>
+          <td>3–6 months</td>
+          <td>Focal spasticity, dystonia</td>
+          <td>NMJ disorders; spread to adjacent muscles</td>
+        </tr>
+        <tr>
+          <td class="td-drug">Orphenadrine</td>
+          <td class="td-mono">Anticholinergic</td>
+          <td>Muscarinic antagonist + NMDA block</td>
+          <td>1 h</td>
+          <td>4–6 h</td>
+          <td>Acute musculoskeletal spasm</td>
+          <td>Anticholinergic effects; Beers list elderly</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<hr>
+
+<!-- ──────────────── SITUATION ──────────────── -->
+<section id="situation">
+  <div class="section-label">Clinical Decision Framework</div>
+  <h2 class="section-title">Which Drug for Which Situation?</h2>
+  <p class="section-desc">Scenario-based guide — first choice and rationale.</p>
+
+  <div class="sitcards">
+
+    <div class="sitcard">
+      <div class="sit-icon">🚨</div>
+      <div class="sit-title">Rapid Sequence Intubation (RSI)</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Suxamethonium 1.5 mg/kg</span>
+        <span class="sit-drug alt">Rocuronium 1.2 mg/kg (alt)</span>
+      </div>
+      <p class="sit-note">SCh: fastest onset, ultra-short duration — ideal for failed airway (spontaneous recovery). Rocuronium 1.2 mg/kg matches SCh onset but lasts ~70 min — only safe if sugammadex (16 mg/kg) immediately available for reversal in cannot-intubate-cannot-oxygenate scenario.</p>
+    </div>
+
+    <div class="sitcard">
+      <div class="sit-icon">🫁</div>
+      <div class="sit-title">ARDS / Prolonged ICU Ventilation</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Cisatracurium infusion</span>
+      </div>
+      <p class="sit-note">Organ-independent elimination (Hofmann) — no dose adjustment in renal/hepatic failure. Minimal histamine. Lower laudanosine than atracurium. ACURASYS trial evidence for early paralysis in ARDS (PaO₂/FiO₂ &lt;150). Note: ROSE trial didn't show mortality benefit at 48h — use selectively.</p>
+    </div>
+
+    <div class="sitcard">
+      <div class="sit-icon">🔥</div>
+      <div class="sit-title">Malignant Hyperthermia</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Dantrolene 2.5 mg/kg IV — URGENT</span>
+      </div>
+      <p class="sit-note">ONLY treatment. Give immediately — do not delay for confirmation. Stop volatile agent + SCh. Continue repeating q5–10 min until rigidity/hyperthermia resolves (up to 10 mg/kg total). Maintain dantrolene 1 mg/kg IV q4–6h × 24–48h post-crisis. MH Hotline (USA): 1-800-MH-HYPER.</p>
+    </div>
+
+    <div class="sitcard">
+      <div class="sit-icon">🧠</div>
+      <div class="sit-title">MS / SCI Spasticity</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Baclofen (oral → intrathecal)</span>
+        <span class="sit-drug alt">Tizanidine (alt)</span>
+      </div>
+      <p class="sit-note">Baclofen is first-line for spasticity of spinal origin. Intrathecal baclofen pump for severe cases refractory to oral. Tizanidine is second-line — monitor hepatotoxicity. Avoid benzodiazepines long-term (dependence, cognitive dulling). Botulinum toxin for focal spasticity (e.g., spastic equinus, elbow flexors).</p>
+    </div>
+
+    <div class="sitcard">
+      <div class="sit-icon">🦴</div>
+      <div class="sit-title">Acute Musculoskeletal Spasm (Back/Neck)</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Cyclobenzaprine 5–10 mg TDS</span>
+        <span class="sit-drug alt">Diazepam 5 mg TDS (alt)</span>
+        <span class="sit-drug alt">Methocarbamol (alt)</span>
+      </div>
+      <p class="sit-note">Short-term only (≤2–3 weeks). Cyclobenzaprine has most evidence. Add NSAIDs + physiotherapy. Avoid opioids as first-line. Tizanidine is an option. Benzodiazepines effective but addiction risk limits use.</p>
+    </div>
+
+    <div class="sitcard">
+      <div class="sit-icon">⚡</div>
+      <div class="sit-title">Tetanus</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Diazepam (high dose)</span>
+        <span class="sit-drug alt">Vecuronium/Pancuronium (severe)</span>
+        <span class="sit-drug alt">Methocarbamol (mild)</span>
+      </div>
+      <p class="sit-note">Mild–moderate: diazepam 5–10 mg IV q4–6h. Severe (intubated ICU): add IV non-depolarising NMB (vecuronium preferred — no vagolytic) for complete motor control. High-dose IV diazepam infusion (100–300 mg/day) historically used. Baclofen intrathecal emerging evidence. Avoid SCh for intubation in generalised tetanus (hyperkalaemia risk).</p>
+    </div>
+
+    <div class="sitcard">
+      <div class="sit-icon">🧪</div>
+      <div class="sit-title">Neuroleptic Malignant Syndrome (NMS)</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Dantrolene 1–2.5 mg/kg IV</span>
+        <span class="sit-drug alt">Bromocriptine 2.5 mg TDS (D2 agonist)</span>
+      </div>
+      <p class="sit-note">Stop offending antipsychotic. Cooling, hydration, ICU. Dantrolene reduces hyperthermia and rigidity via RyR1 block. Bromocriptine restores dopaminergic tone. Diazepam for agitation. Distinguish from SS: NMS slower onset, lead-pipe rigidity, no hyperreflexia/clonus.</p>
+    </div>
+
+    <div class="sitcard">
+      <div class="sit-icon">💉</div>
+      <div class="sit-title">Focal Spasticity (Stroke / CP)</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Botulinum Toxin A</span>
+      </div>
+      <p class="sit-note">Most effective for focal spasticity — targeted chemodenervation without systemic CNS depression. Functional goal setting essential. Combined with physiotherapy/casting. Retreatment every 3–6 months. Systemic relaxants unnecessary if spasticity is limited to one limb.</p>
+    </div>
+
+    <div class="sitcard">
+      <div class="sit-icon">❤️</div>
+      <div class="sit-title">Cardiac Surgery / CVS-Sensitive Patient</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Vecuronium</span>
+        <span class="sit-drug alt">Cisatracurium</span>
+      </div>
+      <p class="sit-note">Vecuronium: no histamine, no vagolytic, no ganglion block → haemodynamically neutral. Avoid pancuronium (tachycardia/hypertension) and atracurium (histamine release/hypotension). Cisatracurium also acceptable — organ-independent.</p>
+    </div>
+
+    <div class="sitcard">
+      <div class="sit-icon">🫘</div>
+      <div class="sit-title">Renal + Hepatic Failure</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Cisatracurium or Atracurium</span>
+      </div>
+      <p class="sit-note">Hofmann elimination makes these organ-independent. Atracurium releases histamine. Cisatracurium preferred. Avoid vecuronium (active metabolite in renal failure), rocuronium (hepatic), pancuronium (renal excretion).</p>
+    </div>
+
+    <div class="sitcard">
+      <div class="sit-icon">🏃</div>
+      <div class="sit-title">Short Elective Procedure</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Mivacurium 0.2 mg/kg</span>
+        <span class="sit-drug alt">Suxamethonium (if no CI)</span>
+      </div>
+      <p class="sit-note">Mivacurium: shortest non-depol duration (~15 min). Ideal where spontaneous recovery preferred and extended paralysis unnecessary. Check pseudocholinesterase history before use.</p>
+    </div>
+
+    <div class="sitcard">
+      <div class="sit-icon">🍺</div>
+      <div class="sit-title">Alcohol Withdrawal with Tremor/Spasm</div>
+      <div class="sit-drugs">
+        <span class="sit-drug">Diazepam or Lorazepam</span>
+      </div>
+      <p class="sit-note">Benzodiazepines are first-line for alcohol withdrawal (seizure prevention + muscle spasm). CIWA protocol guided dosing. Baclofen has emerging evidence in alcohol use disorder reduction but not standard for acute withdrawal spasm.</p>
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+<!-- ──────────────── ADVERSE EFFECTS ──────────────── -->
+<section id="ae">
+  <div class="section-label">Safety Profile</div>
+  <h2 class="section-title">Adverse Effects — Clinically Important</h2>
+  <p class="section-desc">Key adverse effects per agent — particularly the ones that cause patient harm.</p>
+
+  <div class="ae-grid">
+    <div class="ae-card">
+      <div class="ae-drug">Suxamethonium</div>
+      <ul class="ae-list">
+        <li class="ae-serious">Malignant Hyperthermia trigger</li>
+        <li class="ae-serious">Hyperkalaemia → cardiac arrest (burns, SCI, denervation)</li>
+        <li>Fasciculations → post-op myalgia</li>
+        <li>Bradycardia (especially 2nd dose; muscarinic)</li>
+        <li>Raised intraocular/intragastric/intracranial pressure</li>
+        <li>Prolonged apnoea (pseudocholinesterase deficiency)</li>
+        <li class="ae-serious">Phase II block → prolonged paralysis</li>
+        <li>Histamine release (rare)</li>
+      </ul>
+    </div>
+
+    <div class="ae-card">
+      <div class="ae-drug">Non-Depol NMBs (general)</div>
+      <ul class="ae-list">
+        <li class="ae-serious">Residual block post-op → aspiration, hypoxia</li>
+        <li>Histamine release (benzylisoquinoliniums)</li>
+        <li>Hypotension (histamine-mediated)</li>
+        <li>Tachycardia (pancuronium — vagolytic)</li>
+        <li>Bronchospasm (atracurium, mivacurium)</li>
+        <li class="ae-serious">Laudanosine toxicity (atracurium ICU) — seizures</li>
+        <li>Anaphylaxis (all — rare)</li>
+        <li>Prolonged block in organ failure</li>
+      </ul>
+    </div>
+
+    <div class="ae-card">
+      <div class="ae-drug">Baclofen</div>
+      <ul class="ae-list">
+        <li class="ae-serious">Withdrawal syndrome — seizures, hyperthermia, rhabdomyolysis</li>
+        <li>Sedation, dizziness, drowsiness</li>
+        <li>Weakness (dose-dependent)</li>
+        <li>Confusion, hallucinations (high dose/elderly)</li>
+        <li>Urinary retention</li>
+        <li>Nausea</li>
+        <li class="ae-serious">Intrathecal pump failure — life-threatening withdrawal</li>
+        <li>Hypotonia (excessive dosing)</li>
+      </ul>
+    </div>
+
+    <div class="ae-card">
+      <div class="ae-drug">Tizanidine</div>
+      <ul class="ae-list">
+        <li class="ae-serious">Hepatotoxicity (monitor LFTs; rare but fatal)</li>
+        <li>Sedation (significant)</li>
+        <li>Hypotension (orthostatic)</li>
+        <li>Dry mouth</li>
+        <li>Dizziness</li>
+        <li class="ae-serious">CYP1A2 drug interaction → toxic levels</li>
+        <li>Rebound spasticity (abrupt withdrawal)</li>
+      </ul>
+    </div>
+
+    <div class="ae-card">
+      <div class="ae-drug">Cyclobenzaprine</div>
+      <ul class="ae-list">
+        <li>Sedation (most common)</li>
+        <li>Dry mouth</li>
+        <li>Dizziness</li>
+        <li>Constipation</li>
+        <li class="ae-serious">Arrhythmia (TCA structure — QT prolongation)</li>
+        <li class="ae-serious">Serotonin syndrome with MAOIs/SSRIs</li>
+        <li>Urinary retention</li>
+        <li>Confusion (elderly)</li>
+      </ul>
+    </div>
+
+    <div class="ae-card">
+      <div class="ae-drug">Dantrolene</div>
+      <ul class="ae-list">
+        <li class="ae-serious">Hepatotoxicity — fatal (oral; monitor LFTs q3months)</li>
+        <li>Muscle weakness (dose-limiting)</li>
+        <li>Respiratory muscle weakness</li>
+        <li>Diarrhea, nausea</li>
+        <li>Dizziness, drowsiness</li>
+        <li>Phlebitis (IV — alkaline solution)</li>
+        <li>Pleural effusion (rare chronic use)</li>
+      </ul>
+    </div>
+
+    <div class="ae-card">
+      <div class="ae-drug">Benzodiazepines</div>
+      <ul class="ae-list">
+        <li class="ae-serious">Respiratory depression (+ opioids)</li>
+        <li class="ae-serious">Dependence + withdrawal seizures</li>
+        <li>Sedation, cognitive impairment</li>
+        <li>Anterograde amnesia</li>
+        <li>Falls (elderly)</li>
+        <li>Paradoxical agitation</li>
+        <li>Tolerance to muscle relaxant effect</li>
+      </ul>
+    </div>
+
+    <div class="ae-card">
+      <div class="ae-drug">Botulinum Toxin</div>
+      <ul class="ae-list">
+        <li>Local weakness (intended + adjacent muscles)</li>
+        <li>Dysphagia/aspiration (neck injections)</li>
+        <li>Ptosis (facial injections)</li>
+        <li>Pain at injection site</li>
+        <li class="ae-serious">Systemic spread → generalised weakness</li>
+        <li class="ae-serious">Anaphylaxis (rare)</li>
+        <li>Antibody formation (BoNT-B &gt; BoNT-A)</li>
+        <li>Flu-like symptoms</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- ──────────────── REVERSAL ──────────────── -->
+<section id="reversal">
+  <div class="section-label">Reversal Agents</div>
+  <h2 class="section-title">Reversal of NMBs</h2>
+  <p class="section-desc">Only relevant for neuromuscular blocking agents. Spasmolytics do not require pharmacological reversal.</p>
+
+  <div class="rev-grid">
+
+    <div class="rev-card">
+      <div class="rev-title">Sugammadex</div>
+      <div class="rev-sub">Modified γ-cyclodextrin — encapsulates amino-steroids</div>
+      <div class="rev-item"><span class="rev-label">Targets</span><span class="rev-val">Rocuronium, Vecuronium (NOT benzylisoquinoliniums)</span></div>
+      <div class="rev-item"><span class="rev-label">Mechanism</span><span class="rev-val">Directly encapsulates NMB → lipophilic cavity traps drug → rapid dissociation from receptor → complete reversal</span></div>
+      <div class="rev-item"><span class="rev-label">Dose (moderate block, TOF 1–2)</span><span class="rev-val">2 mg/kg IV</span></div>
+      <div class="rev-item"><span class="rev-label">Dose (deep block, TOF = 0)</span><span class="rev-val">4 mg/kg IV</span></div>
+      <div class="rev-item"><span class="rev-label">SCh Phase II block</span><span class="rev-val">Sugammadex has NO affinity for succinylcholine — cannot reverse Phase I or Phase II SCh block. Manage with ventilatory support ± neostigmine once SCh is sufficiently metabolised.</span></div>
+      <div class="rev-item"><span class="rev-label">Dose (immediate reversal — RSI dose Roc)</span><span class="rev-val">16 mg/kg IV</span></div>
+      <div class="rev-item"><span class="rev-label">Onset</span><span class="rev-val">~3 min</span></div>
+      <div class="rev-item"><span class="rev-label">Advantage</span><span class="rev-val">No muscarinic side effects; works at any depth of block; complete reversal</span></div>
+      <div class="rev-item"><span class="rev-label">Watch for</span><span class="rev-val">Rocuronium recurrence if insufficient dose; hypersensitivity reactions ~0.3% (true anaphylaxis ~0.02–0.07%); interferes with hormonal contraceptives</span></div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-title">Neostigmine</div>
+      <div class="rev-sub">Acetylcholinesterase inhibitor</div>
+      <div class="rev-item"><span class="rev-label">Targets</span><span class="rev-val">All non-depolarising NMBs (competitive block only)</span></div>
+      <div class="rev-item"><span class="rev-label">Mechanism</span><span class="rev-val">Inhibits AChE → ↑ ACh at NMJ → outcompetes NMB for receptor → block reversed</span></div>
+      <div class="rev-item"><span class="rev-label">Dose</span><span class="rev-val">0.04–0.07 mg/kg IV (max 5 mg)</span></div>
+      <div class="rev-item"><span class="rev-label">Must give with</span><span class="rev-val">Atropine 0.6–1.2 mg IV OR Glycopyrrolate 0.2 mg per 1 mg neostigmine — to block muscarinic effects</span></div>
+      <div class="rev-item"><span class="rev-label">Limitation</span><span class="rev-val">Cannot reverse deep block (TOF = 0); ceiling effect; may worsen block if deep</span></div>
+      <div class="rev-item"><span class="rev-label">Muscarinic SE (without atropine)</span><span class="rev-val">Bradycardia, bronchospasm, hypersalivation, lacrimation, GI cramps</span></div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-title">Edrophonium</div>
+      <div class="rev-sub">Short-acting AChE inhibitor</div>
+      <div class="rev-item"><span class="rev-label">Dose — NMB reversal</span><span class="rev-val">0.5–1 mg/kg IV (max 40 mg)</span></div>
+      <div class="rev-item"><span class="rev-label">Dose — Tensilon test (MG diagnosis)</span><span class="rev-val">2 mg IV test dose → then 8 mg IV if tolerated = 10 mg total (fixed dose, NOT weight-based)</span></div>
+      <div class="rev-item"><span class="rev-label">Onset</span><span class="rev-val">1–2 min (faster than neostigmine)</span></div>
+      <div class="rev-item"><span class="rev-label">Duration</span><span class="rev-val">Shorter than neostigmine — risk of re-curarisation</span></div>
+      <div class="rev-item"><span class="rev-label">Use</span><span class="rev-val">Diagnosis of myasthenia gravis (Tensilon test); NMB reversal in some protocols</span></div>
+      <div class="rev-item"><span class="rev-label">Note</span><span class="rev-val">Largely replaced by sugammadex for NMB reversal in modern anaesthesia</span></div>
+    </div>
+
+    <div class="rev-card">
+      <div class="rev-title">Flumazenil</div>
+      <div class="rev-sub">Benzodiazepine antagonist (for BZD-induced muscle relaxation)</div>
+      <div class="rev-item"><span class="rev-label">Mechanism</span><span class="rev-val">Competitive GABA-A (BZD site) antagonist</span></div>
+      <div class="rev-item"><span class="rev-label">Dose</span><span class="rev-val">0.2 mg IV q1 min → max 1 mg (titrate)</span></div>
+      <div class="rev-item"><span class="rev-label">Onset</span><span class="rev-val">1–3 min</span></div>
+      <div class="rev-item"><span class="rev-label">Duration</span><span class="rev-val">Short (45–90 min) — re-sedation likely with long-acting BZDs</span></div>
+      <div class="rev-item"><span class="rev-label">Warning</span><span class="rev-val">Precipitates acute withdrawal seizures in BZD-dependent patients; raises ICP in head injury</span></div>
+    </div>
+
+  </div>
+
+  <div class="callout" style="margin-top:28px;">
+    <div class="callout-icon">📊</div>
+    <div class="callout-body">
+      <strong>Train-of-Four (TOF) monitoring</strong> — use peripheral nerve stimulator at ulnar nerve. TOF count 0 = deep block. TOF ratio &lt;0.9 = residual block (aspiration risk). Sugammadex works at any TOF. Neostigmine: only reliably effective at TOF count ≥2 (ideally ≥4 twitches). <strong>Always confirm recovery before extubation.</strong>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Muscle Relaxants — Clinical Reference &nbsp;|&nbsp; For educational use &nbsp;|&nbsp; Verify doses against current national formulary / institutional protocols &nbsp;|&nbsp; Last compiled July 2026
+</footer>
+
+</body>
+</html>
